@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.impact-font {
+  font-family: 'Impact', Charcoal, sans-serif;
+}
+
+.raleway-font {
+  font-family: 'Raleway', sans-serif;
+}
