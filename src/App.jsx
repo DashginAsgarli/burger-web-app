@@ -1,9 +1,10 @@
+import Hero from "./page/Hero"
 
 function App() {
 
   return (
     <>
-
+      <Hero />
     </>
   )
 }
