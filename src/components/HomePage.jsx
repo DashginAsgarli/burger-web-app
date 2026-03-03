@@ -6,7 +6,7 @@ import Burger1 from '../assets/burger1.svg'
 function HomePage() {
   return (
     <>
-      <section className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 px-6 md:px-[90px] lg:px-[112px] pb-[40px] items-center'>
+      <section className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 px-6 md:px-[90px] lg:px-[112px] pb-[40px] pt-[80px] items-center'>
 
         <div className='order-first lg:order-last flex justify-center mt-4 lg:mt-0'>
           <img src={Burger1} alt="Burger" className='h-[250px] sm:h-[400px] md:h-[400px] lg:h-[650px] drop-shadow-[0_20px_100px_#9b1c1c] object-contain' />
