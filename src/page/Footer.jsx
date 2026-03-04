@@ -7,7 +7,7 @@ import { FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
 function Footer() {
     return (
         <>
-            <section className='px-4 px-15 lg:px-[112px] text-[#212121]'>
+            <section className=' md:px-15 lg:px-[112px] text-[#212121]'>
                 <div className='flex flex-col md:flex-row justify-between gap-10 md:gap-[40px] lg:gap-[60px] bg-[#FFD700] px-6 lg:px-[50px] pt-[55px] pb-[11px] text-[18px]'>
                     
                     <div className='w-full md:w-[290px]'>

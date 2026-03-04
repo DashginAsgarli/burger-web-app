@@ -22,7 +22,7 @@ function DealsSection() {
     ]
     return (
         <>
-            <section className='py-[60px] lg:py-[100px] px-6 md:px-[90px] lg:px-[112px]'>
+            <section className='py-[60px] lg:py-[100px] px-6 md:px-15 lg:px-[112px]'>
                 <h2 className='impact-font text-[30px] md:text-[50px] lg:text-[63px] text-[#FFD700] text-center uppercase'>
                     CRISPY DEALS OF BURGERS
                 </h2>
