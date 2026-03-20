@@ -22,7 +22,7 @@ export default function CartDrawer({ onClose, onAuthRequired }) {
     }
 
     return (
-        <div className="fixed inset-0 z-[200] flex justify-end">
+        <div className="fixed inset-0 z-200 flex justify-end">
             <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
             <div className="relative bg-[#1a0a00] w-full max-w-md h-full flex flex-col shadow-2xl border-l border-[#FFD700]/10">
 

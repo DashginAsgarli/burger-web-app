@@ -32,7 +32,7 @@ export default function OrdersPage() {
     return (
         <>
             <Header />
-            <main className="min-h-screen bg-black pt-[100px] pb-20 px-6 md:px-[90px] lg:px-[112px]">
+            <main className="min-h-screen bg-black pt-25 pb-20 px-6 md:px-20 lg:px-28">
                 <div className="flex items-center justify-between mb-10">
                     <h1 className="impact-font text-[#FFD700] text-4xl md:text-5xl uppercase">My Orders</h1>
                     <span className="raleway-font text-white/40 text-sm">{user.name}</span>

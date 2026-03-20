@@ -39,9 +39,9 @@ function Header() {
 
     return (
         <>
-            <header className='fixed top-0 left-0 w-full z-[100] bg-white/1 backdrop-blur-md flex items-center justify-between px-6 md:px-20 lg:px-[112px] py-[15px] md:py-[25px] transition-all'>
+            <header className='fixed top-0 left-0 w-full z-100 bg-white/1 backdrop-blur-md flex items-center justify-between px-6 md:px-20 lg:px-28 py-4 md:py-6 transition-all'>
 
-                <img src={logo} alt="Logo" className='h-[35px] lg:h-auto cursor-pointer' onClick={() => scrollTo('home')} />
+                <img src={logo} alt="Logo" className='h-8 lg:h-auto cursor-pointer' onClick={() => scrollTo('home')} />
 
                 <div className='lg:hidden flex items-center gap-3'>
                     <button onClick={() => setShowCart(true)} className='relative text-[#FFD700] text-[28px]'>
@@ -57,7 +57,7 @@ function Header() {
                     </button>
                 </div>
 
-                <ul className={`raleway-font flex flex-col lg:flex-row gap-6 lg:gap-12 text-[17px] text-[#212121] bg-[#FFD700] items-center px-10 rounded-[25px] lg:rounded-[35px] absolute lg:static top-[70px] left-6 right-6 z-50 py-8 lg:py-0 lg:h-[40px] transition-all duration-300 ease-in-out shadow-2xl lg:shadow-none ${isOpen ? 'flex opacity-100' : 'hidden lg:flex'}`}>
+                <ul className={`raleway-font flex flex-col lg:flex-row gap-6 lg:gap-12 text-[17px] text-[#212121] bg-[#FFD700] items-center px-10 rounded-[25px] lg:rounded-[35px] absolute lg:static top-18 left-6 right-6 z-50 py-8 lg:py-0 lg:h-10 transition-all duration-300 ease-in-out shadow-2xl lg:shadow-none ${isOpen ? 'flex opacity-100' : 'hidden lg:flex'}`}>
 
                     {navLinks.map(({ label, section }) => (
                         <li key={section} onClick={() => scrollTo(section)} className='cursor-pointer border-b lg:border-none border-black/10 w-full text-center lg:w-auto pb-2 lg:pb-0 hover:text-[#D32F2F] transition-colors font-medium'>    {label}</li>
@@ -103,13 +103,13 @@ function Header() {
 
                     {user ? (
                         <div className='relative group'>
-                            <div className='flex items-center gap-2 bg-[#FFD700] h-[40px] px-4 rounded-[35px] cursor-pointer select-none'>
+                            <div className='flex items-center gap-2 bg-[#FFD700] h-10 px-4 rounded-[35px] cursor-pointer select-none'>
                                 <CgProfile className='text-[22px] text-[#212121]' />
                                 <span className='text-[#212121] text-[15px] font-semibold raleway-font'>
                                     {user.name.split(' ')[0]}
                                 </span>
                             </div>
-                            <div className='absolute top-full right-0 mt-2 bg-[#1a0a00] border border-[#FFD700]/20 rounded-2xl p-2 hidden group-hover:block min-w-[160px] shadow-xl'>
+                            <div className='absolute top-full right-0 mt-2 bg-[#1a0a00] border border-[#FFD700]/20 rounded-2xl p-2 hidden group-hover:block min-w-40 shadow-xl'>
                                 <button onClick={() => navigate('/orders')} className='block w-full text-left px-4 py-2 text-[#FFD700] hover:bg-[#FFD700]/10 rounded-xl text-sm raleway-font transition-colors'>
                                     📦 My orders
                                 </button>
@@ -119,7 +119,7 @@ function Header() {
                             </div>
                         </div>
                     ) : (
-                        <button onClick={() => setShowAuth(true)} className='bg-[#D32F2F] text-white h-[40px] px-5 rounded-[35px] text-[15px] hover:bg-[#9b1c1c] transition-colors raleway-font font-semibold'>
+                        <button onClick={() => setShowAuth(true)} className='bg-[#D32F2F] text-white h-10 px-5 rounded-[35px] text-[15px] hover:bg-[#9b1c1c] transition-colors raleway-font font-semibold'>
                             Login
                         </button>
                     )}
