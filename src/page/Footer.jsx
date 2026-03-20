@@ -9,7 +9,7 @@ function Footer() {
         <>
             <section className=' md:px-15 lg:px-[112px] text-[#212121]'>
                 <div className='flex flex-col md:flex-row justify-between gap-10 md:gap-[40px] lg:gap-[60px] bg-[#FFD700] px-6 lg:px-[50px] pt-[55px] pb-[11px] text-[18px]'>
-                    
+
                     <div className='w-full md:w-[290px]'>
                         <img src={logo} alt="Logo" />
                         <p className='my-[20px]'>Your Complain Register Here</p>
@@ -45,7 +45,7 @@ function Footer() {
                         </div>
 
                         <div className='flex justify-center md:justify-end mt-[40px] md:mt-[60px] gap-5'>
-                            {[<FaSquareInstagram key="1"/>, <FaSquareXTwitter key="2"/>, <FaTwitter key="3"/>].map((icon, index) => (
+                            {[<FaSquareInstagram key="1" />, <FaSquareXTwitter key="2" />, <FaTwitter key="3" />].map((icon, index) => (
                                 <div key={index} className='text-[30px] text-[#D32F2F] hover:text-[#9b1c1c] transition-colors duration-300 cursor-pointer'>
                                     {icon}
                                 </div>

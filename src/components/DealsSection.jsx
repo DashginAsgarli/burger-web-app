@@ -2,7 +2,11 @@ import React from 'react'
 import only3 from '../assets/only3.svg'
 import deal1 from '../assets/deal1.svg'
 import deal2 from '../assets/deal2.svg'
+import { useCart } from '../context/CartContext'
+
 function DealsSection() {
+    const { addToCart, cart } = useCart()
+    const getQty = (id) => cart.find(i => i.id === id)?.qty || 0
     const deals = [
         {
             id: 1,
@@ -40,9 +44,7 @@ function DealsSection() {
                                 {deal.title}
                             </p>
 
-                            <button className='raleway-font text-[16px] lg:text-[20px] text-[#212121] bg-[#FFD700] py-[8px] lg:py-[3px] px-[30px] rounded-[35px] transition-all duration-300 hover:bg-[#e6c200] hover:scale-105 active:scale-95 cursor-pointer text-center block mx-auto'>
-                                Order Now
-                            </button>
+                            <button onClick={() => addToCart(deal)} className='raleway-font text-[16px] lg:text-[20px] text-[#212121] bg-[#FFD700] py-[8px] lg:py-[3px] px-[30px] rounded-[35px] transition-all duration-300 hover:bg-[#e6c200] hover:scale-105 active:scale-95 cursor-pointer text-center block mx-auto'>    {getQty(deal.id) > 0 ? `In cart: ${getQty(deal.id)} ✓` : 'Order Now'}</button>
                         </div>
                     ))}
                 </div>
