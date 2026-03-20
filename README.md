@@ -97,6 +97,11 @@ git push origin feature/your-feature
 
 <br/>
 
-## 〔 License 〕
+## 〔 Contact 〕
+<div>
 
-Distributed under the **MIT License** — see [`LICENSE`](LICENSE) for details.
+[![Email](https://img.shields.io/badge/Gmail-dashqinasgarli%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dashqinasgarli@gmail.com)
+&nbsp;
+[![Issues](https://img.shields.io/badge/Report-Issue-e11d48?style=for-the-badge&logo=github)](https://github.com/DashginAsgarli/flag-quiz-app/issues)
+
+</div>
