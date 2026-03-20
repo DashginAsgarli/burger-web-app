@@ -3,6 +3,7 @@ import burger2 from '../assets/burger2.svg'
 import burger3 from '../assets/burger3.svg'
 import burger4 from '../assets/burger4.svg'
 import burger5 from '../assets/burger5.svg'
+import { useCart } from '../context/CartContext'
 
 const burgers = [
     { id: 1, name: 'Triple Patty', price: '8$', image: burger2, highlight: true },
@@ -12,12 +13,15 @@ const burgers = [
 ];
 
 function BurgerPatty() {
+    const { addToCart, cart } = useCart()
+    const getQty = (id) => cart.find(i => i.id === id)?.qty || 0
+
     return (
         <div className="bg-black py-10 px-6 md:px-15  lg:px-6">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-nowrap lg:grid lg:grid-cols-4 overflow-x-auto lg:overflow-x-visible snap-x snap-mandatory gap-6 no-scrollbar pb-10">
                     {burgers.map((burger) => (
-                        <div key={burger.id} className={`    flex-shrink-0 w-[280px] sm:w-[320px] lg:w-full snap-center     flex flex-col items-center rounded-[2rem] p-8 transition-all duration-300    ${burger.highlight ? 'bg-[#FF4D00]' : 'bg-[#3D0C02]'}  `}>
+                        <div key={burger.id} className={`flex-shrink-0 w-[280px] sm:w-[320px] lg:w-full snap-center     flex flex-col items-center rounded-[2rem] p-8 transition-all duration-300    ${burger.highlight ? 'bg-[#FF4D00]' : 'bg-[#3D0C02]'}  `}>
                             <div className="mb-6">
                                 <img src={burger.image} alt={burger.name} className="w-48 h-40 object-contain drop-shadow-2xl" />
                             </div>
@@ -38,6 +42,7 @@ function BurgerPatty() {
                             <p className="text-gray-200 text-sm text-center opacity-80 leading-relaxed mb-4">
                                 Lorem Ipsum is simply <br /> dummy text of.
                             </p>
+                            <button onClick={() => addToCart(burger)} className={`w-full py-2 px-6 rounded-full font-bold raleway-font text-sm transition-all active:scale-95 hover:scale-105 ${burger.highlight ? 'bg-black text-[#FFD700] hover:bg-black/80' : 'bg-[#FFD700] text-black hover:bg-[#e6c200]'}`}>    {getQty(burger.id) > 0 ? `In cart: ${getQty(burger.id)} ✓` : 'Add to cart'}</button>
                         </div>
                     ))}
                 </div>

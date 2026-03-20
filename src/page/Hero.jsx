@@ -8,11 +8,11 @@ import BurgerPatty from '../components/BurgerPatty'
 function Hero() {
     return (
         <>
-            <HomePage />
-            <BurgerPatty />
-            <DealsSection />
-            <LiveKitchen />
-            <MobileApp />
+            <div id="home"><HomePage /></div>
+            <div id="burgers"><BurgerPatty /></div>
+            <div id="deals"><DealsSection /></div>
+            <div id="live"><LiveKitchen /></div>
+            <div id="app"><MobileApp /></div>
         </>
     )
 }
