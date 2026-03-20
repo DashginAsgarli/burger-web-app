@@ -18,12 +18,12 @@ A sleek, fully responsive burger restaurant ordering app built with React and Ta
 ## 〔 Features 〕
 
 > [!TIP]
-> - 🛒 **Shopping Cart** — Add, remove, and update item quantities with a sleek slide-in drawer.
-> - 🔐 **Authentication** — Secure Login & Register modals with real-time form validation and protected ordering routes.
-> - 🔍 **Live Search** — Instant search bar with dynamic dropdown results and smooth scroll-to-section navigation.
-> - 📦 **Order Management** — Seamlessly place and track your orders with a dedicated and organized orders page.
-> - 🎨 **Premium UI** — High-end Dark `#1a0a00` theme accented with `#FFD700` gold highlights and fluid animations.
-> - 📱 **Fully Responsive** — Mobile-first architecture featuring optimized horizontal scroll carousels for smaller screens.
+> - **Shopping Cart** — Add, remove, and update item quantities with a sleek slide-in drawer.
+> - **Authentication** — Secure Login & Register modals with real-time form validation and protected ordering routes.
+> - **Live Search** — Instant search bar with dynamic dropdown results and smooth scroll-to-section navigation.
+> - **Order Management** — Seamlessly place and track your orders with a dedicated and organized orders page.
+> - **Premium UI** — High-end Dark `#1a0a00` theme accented with `#FFD700` gold highlights and fluid animations.
+> - **Fully Responsive** — Mobile-first architecture featuring optimized horizontal scroll carousels for smaller screens.
 
 <br/>
 
