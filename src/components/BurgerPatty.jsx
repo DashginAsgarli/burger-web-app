@@ -17,11 +17,11 @@ function BurgerPatty() {
     const getQty = (id) => cart.find(i => i.id === id)?.qty || 0
 
     return (
-        <div className="bg-black py-10 px-6 md:px-15  lg:px-6">
+        <div className="bg-black py-10 px-6 md:px-20 lg:px-28">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-nowrap lg:grid lg:grid-cols-4 overflow-x-auto lg:overflow-x-visible snap-x snap-mandatory gap-6 no-scrollbar pb-10">
                     {burgers.map((burger) => (
-                        <div key={burger.id} className={`flex-shrink-0 w-[280px] sm:w-[320px] lg:w-full snap-center     flex flex-col items-center rounded-[2rem] p-8 transition-all duration-300    ${burger.highlight ? 'bg-[#FF4D00]' : 'bg-[#3D0C02]'}  `}>
+                        <div key={burger.id} className={`shrink-0 w-70 sm:w-[320px] lg:w-full snap-center     flex flex-col items-center rounded-4xl p-8 transition-all duration-300    ${burger.highlight ? 'bg-[#FF4D00]' : 'bg-[#3D0C02]'}  `}>
                             <div className="mb-6">
                                 <img src={burger.image} alt={burger.name} className="w-48 h-40 object-contain drop-shadow-2xl" />
                             </div>

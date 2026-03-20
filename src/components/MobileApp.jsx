@@ -11,12 +11,12 @@ function MobileApp() {
     ];
 
     return (
-        <section className='bg-black min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 px-6 md:px-[90px] lg:px-[112px] py-[80px] items-center overflow-hidden'>
+        <section className='bg-black min-h-screen grid grid-cols-1 lg:grid-cols-12 gap-8 px-6 md:px-20 lg:px-28 py-20 items-center overflow-hidden'>
 
             <div className='lg:col-span-7 relative flex justify-center items-center'>
-                <div className='absolute w-[300px] h-[300px] md:w-[450px] md:h-[450px] bg-red-600 rounded-full blur-[130px] opacity-50 -z-10 animate-pulse'></div>
+                <div className='absolute w-75 h-75 md:w-md md:h-112 bg-red-600 rounded-full blur-[130px] opacity-50 -z-10 animate-pulse'></div>
 
-                <img src={burgeruper} alt="Burger App Mobile" className='w-[65%]  md:w-[60%] lg:w-[70%] max-w-[500px] lg:max-w-[765px] drop-shadow-[0_20px_90px_#9b1c1c] object-contain z-10' />
+                <img src={burgeruper} alt="Burger App Mobile" className='w-[65%]  md:w-[60%] lg:w-[70%] max-w-124 lg:max-w-190 drop-shadow-[0_20px_90px_#9b1c1c] object-contain z-10' />
             </div>
 
             <div className='lg:col-span-5 text-center lg:text-left space-y-6'>

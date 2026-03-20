@@ -27,7 +27,7 @@ export default function AuthModal({ onClose }) {
     }
 
     return (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
+        <div className="fixed inset-0 z-200 flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
             <div className="relative bg-[#1a0a00] border border-[#FFD700]/20 rounded-3xl p-8 w-full max-w-md shadow-2xl">
                 <button onClick={onClose} className="absolute top-4 right-4 text-[#FFD700] text-2xl hover:text-white transition-colors">
                     <IoClose />

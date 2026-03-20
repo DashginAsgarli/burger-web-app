@@ -6,14 +6,14 @@ import Burger1 from '../assets/burger1.svg'
 function HomePage() {
   return (
     <>
-      <section className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 px-6 md:px-[90px] lg:px-[112px] pb-[40px] pt-[80px] items-center'>
+      <section className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 px-6 md:px-20 lg:px-28 pb-10 pt-20 items-center'>
 
         <div className='order-first lg:order-last flex justify-center mt-4 lg:mt-0'>
-          <img src={Burger1} alt="Burger" className='h-[250px] sm:h-[400px] md:h-[400px] lg:h-[650px] drop-shadow-[0_20px_100px_#9b1c1c] object-contain' />
+          <img src={Burger1} alt="Burger" className='h-60 sm:h-100 md:h-100 lg:h-162 drop-shadow-[0_20px_100px_#9b1c1c] object-contain' />
         </div>
 
         <div className='text-center lg:text-left'>
-          <div className='text-[30px] md:text-[40px] mt-1 lg:mt-[88px] font-light'>Speical`</div>
+          <div className='text-[30px] md:text-[40px] mt-1 lg:mt-22 font-light'>Speical`</div>
 
           <div className='leading-tight'>
             <div className='impact-font text-[40px] md:text-[70px] lg:text-[90px] font-mono text-[#FFD700]'>
@@ -28,11 +28,11 @@ function HomePage() {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
           </p>
 
-          <button className='raleway-font text-[16px] md:text-[25px] text-[#212121] bg-[#FFD700] py-[3px] px-[30px] rounded-[35px] my-[15px] lg:my-[25px] transition-all duration-300 ease-in-out hover:bg-[#e6c200] hover:scale-105 active:scale-95 cursor-pointer'>
+          <button className='raleway-font text-[16px] md:text-[25px] text-[#212121] bg-[#FFD700] py-1 px-8 rounded-[35px] my-4 lg:my-7 transition-all duration-300 ease-in-out hover:bg-[#e6c200] hover:scale-105 active:scale-95 cursor-pointer'>
             Order Now
           </button>
 
-          <div className='flex items-center justify-center lg:justify-start gap-2 mb-[15px] lg:mb-[20px]'>
+          <div className='flex items-center justify-center lg:justify-start gap-2 mb-3 lg:mb-5'>
             <CgProfile className='text-[30px] lg:text-[45px]' />
             <div className='text-[20px]'>Charles</div>
           </div>

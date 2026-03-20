@@ -54,13 +54,13 @@ export default function SearchBar({ className = '', inputClass = '', mobile = fa
 
     return (
         <div className={`relative ${className}`}>
-            <div className={`flex items-center gap-2 bg-[#FFD700] h-[40px] px-4 rounded-[35px] ${inputClass}`}>
+            <div className={`flex items-center gap-2 bg-[#FFD700] h-10 px-4 rounded-[35px] ${inputClass}`}>
                 <input type="text" value={query} onChange={handleChange} onKeyDown={handleKey} onFocus={() => query && setOpen(true)} onBlur={() => setTimeout(() => setOpen(false), 150)} placeholder={mobile ? 'Search...' : 'Search'} className='outline-none bg-transparent placeholder:text-[#212121]/70 text-[#212121] w-full text-[17px]' />
                 <IoSearch className='text-[#212121] text-[18px] shrink-0' />
             </div>
 
             {open && results.length > 0 && (
-                <div className='absolute top-[48px] left-0 right-0 bg-[#1a0a00] border border-[#FFD700]/20 rounded-2xl overflow-hidden shadow-2xl z-[300]'>
+                <div className='absolute top-12 left-0 right-0 bg-[#1a0a00] border border-[#FFD700]/20 rounded-2xl overflow-hidden shadow-2xl z-300'>
                     {results.map((item, i) => (
                         <button key={i} onMouseDown={() => handleSelect(item)} className='w-full text-left px-4 py-3 text-[#FFD700] hover:bg-[#FFD700]/10 transition-colors raleway-font text-sm border-b border-[#FFD700]/5 last:border-0 flex items-center gap-2'>    <IoSearch className='text-[#FFD700]/40 text-[14px] shrink-0' />    {item.label}</button>
                     ))}
@@ -68,7 +68,7 @@ export default function SearchBar({ className = '', inputClass = '', mobile = fa
             )}
 
             {open && results.length === 0 && query.length > 0 && (
-                <div className='absolute top-[48px] left-0 right-0 bg-[#1a0a00] border border-[#FFD700]/20 rounded-2xl overflow-hidden shadow-2xl z-[300]'>
+                <div className='absolute top-12 left-0 right-0 bg-[#1a0a00] border border-[#FFD700]/20 rounded-2xl overflow-hidden shadow-2xl z-300'>
                     <p className='px-4 py-3 text-white/40 raleway-font text-sm'>Nəticə tapılmadı</p>
                 </div>
             )}
