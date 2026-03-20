@@ -28,7 +28,7 @@ A sleek, fully responsive burger restaurant ordering app built with React and Ta
 <br/>
 
 ## 〔 Demo 〕
-[![Live Demo](https://img.shields.io/badge/demo-live_site-FFD700?style=for-the-badge&logo=safari&logoColor=1a0a00)](https://your-demo-link.vercel.app)
+[![Live Demo](https://img.shields.io/badge/demo-live_site-FFD700?style=for-the-badge&logo=safari&logoColor=1a0a00)](https://dashginasgarli.github.io/burger-web-app/)
 
 
 ## 〔 Quick Start 〕
